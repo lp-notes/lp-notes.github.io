@@ -1,0 +1,117 @@
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/500.css";
+@import "@fontsource/jetbrains-mono/700.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Developer Portfolio Design System */
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 340 82% 65%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 340 82% 65%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 340 82% 65%;
+
+    --radius: 0.5rem;
+
+    /* Custom portfolio colors */
+    --lavender-panel: 262 50% 68%;
+    --lavender-panel-dark: 262 50% 53%;
+    --black-panel: 0 0% 5%;
+    --nav-bg: 0 0% 8%;
+    --nav-active: 262 50% 53%;
+    --timeline-line: 262 50% 53%;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-mono;
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .split-background {
+    background: linear-gradient(to right, hsl(340 82% 65%) 0%, hsl(340 82% 65%) 40%, hsl(0 0% 5%) 40%, hsl(0 0% 5%) 100%);
+  }
+
+  .nav-pill {
+    @apply px-6 py-3 rounded-full text-sm font-medium transition-all duration-300;
+    @apply bg-nav-bg text-foreground hover:bg-muted;
+  }
+
+  .nav-pill-active {
+    @apply bg-nav-active text-primary-foreground;
+  }
+
+  .section-title {
+    @apply text-2xl font-bold mb-6 text-foreground;
+  }
+
+  .timeline-item {
+    @apply relative pl-8 pb-8 border-l-2 border-timeline-line last:pb-0;
+  }
+
+  .timeline-dot {
+    @apply absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-timeline-line;
+  }
+
+  .social-icon {
+    @apply w-10 h-10 rounded-full bg-black-panel flex items-center justify-center;
+    @apply text-foreground hover:bg-nav-active hover:text-primary-foreground transition-all duration-300;
+  }
+
+  .skill-tag {
+    @apply px-4 py-2 rounded-lg bg-secondary text-foreground text-sm font-medium;
+  }
+
+  .interest-item {
+    @apply flex items-center gap-3 text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-pink-400;
+  }
+}
