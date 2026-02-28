@@ -28,7 +28,7 @@ const IntroSection = () => {
               <Linkedin size={20} />
             </a>
             <a
-              href="https://github.com/lp-notes"
+              href="https://github.com/lp-notes/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -37,7 +37,7 @@ const IntroSection = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://hashnode.com/@lpblogs"
+              href="https://hashnode.com/@lpblogs/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -95,4 +95,5 @@ const IntroSection = () => {
 };
 
 export default IntroSection;
+
 
