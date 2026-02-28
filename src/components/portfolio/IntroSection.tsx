@@ -19,7 +19,7 @@ const IntroSection = () => {
           </h2>
           <div className="flex items-center justify-center gap-4">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/lakshmi-prasanna-k-31a538191/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -28,8 +28,8 @@ const IntroSection = () => {
               <Linkedin size={20} />
             </a>
             <a
-              href="https://github.com"
-              target="https://github.com/lp-notes"
+              href="https://github.com/lp-notes"
+              target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
               aria-label="GitHub"
@@ -37,7 +37,7 @@ const IntroSection = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://blog.example.com"
+              href="https://hashnode.com/@lpblogs"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -95,3 +95,4 @@ const IntroSection = () => {
 };
 
 export default IntroSection;
+
