@@ -2,6 +2,12 @@ import { Heart, Edit, Monitor, Coffee, BookOpen } from "lucide-react";
 
 const interests = [
   {
+    icon: BookOpen,
+    title: "Reading & Learning",
+    description:
+      "Whether it’s exploring the latest tech or diving into a fictional world, I love spending time with a good book.",
+  },
+  {
     icon: Edit,
     title: "Blogging",
     description:
@@ -19,12 +25,7 @@ const interests = [
     description:
       "Just me, a cup of coffee, a sunset, and a little patch of nature to breathe in.",
   },
-    {
-    icon: BookOpen,
-    title: "Reading & Learning",
-    description:
-      "Whether it’s exploring the latest tech or diving into a fictional world, I love spending time with a good book.",
-  },
+
 ];
 
 const InterestsSection = () => {
@@ -71,3 +72,4 @@ const InterestsSection = () => {
 };
 
 export default InterestsSection;
+
